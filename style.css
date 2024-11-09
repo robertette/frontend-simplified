@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -8,3 +10,263 @@
     border: 1px solid lightgray;
 }
 
+.row {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: #eadcff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 24px;
+    background-color: #cafdff;
+}
+
+.logo {
+    width: 100%;
+    max-width: 300px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    padding: 16px;
+}
+
+a {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    padding: 24px;
+}
+
+.home__description {
+    width: 50%;
+    margin-bottom: 24px;
+}
+
+.home__image {
+    width: 50%;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+.home__description--para {
+    font-size: 32px;
+    margin: 16px 0;
+}
+
+button {
+    background-color: #05cdff;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* 
+.row {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+
+#about,
+#discord,
+#contact,
+#footer {
+    padding: 48px 0;
+}
+
+/* about section */
+#about {
+    background-color: #f8ffdc;
+}
+
+h2 {
+    font-size: 56px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.section__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__description--text,
+.img__wrapper {
+    padding: 0 32px;
+}
+
+.section__description--text {
+    width: 60%;
+}
+
+.section__description--para {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.img__wrapper {
+    width: 40%;
+}
+
+img {
+    width: 100%;
+}
+
+/* discord section */
+#discord {
+    background-color: #cefeff;
+}
+
+/* contact section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dce9ff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+input,
+textarea {
+    padding: 5px 0;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #aaf5ff;
+}
+
+/* 
+.footer__logo {
+    max-width: 250px;
+}
+*/
+
+.footer__links {
+    margin: 8px 0;
+}
+
+.footer__link {
+    padding: 5px;
+    margin: 0 5px;
+}
+
+/* small, large smart phones, tablets */
+@media (max-width: 728px) {
+
+    #about,
+    #discord,
+    #contact,
+    #footer {
+        padding: 24px 0;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .home__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home__description--heading,
+    .home__description--para {
+        text-align: center;
+    }
+
+    .home__description--para {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+
+    .section__description {
+        flex-direction: column;
+    }
+
+    .section__description--text {
+        width: 100%;
+    }
+
+    .img__wrapper {
+        width: 100%;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        padding: 48px 24px;
+    }
+
+    .logo {
+        max-width: 250px;
+    }
+
+    .footer__link {
+        padding: 3px;
+        margin: 0 3px;
+        font-size: 16px;
+    }
+}
